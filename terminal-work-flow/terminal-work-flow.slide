@@ -1,0 +1,30 @@
+# Terminal Work Flow
+
+Name
+9 Mar 2021
+jneo8lin@gmail.com
+
+## Tools
+
+## Terminal
+
+* mac
+    - iterm2
+* Linux
+    - gnome-terminal
+* shell
+    - zsh
+    - oh-my-zsh
+
+
+## Terminal - Iterms
+
+[hotkey-window](https://iterm2.com/features.html)
+
+> iTerm2 offers a special terminal window that is always available with a single keystroke. This window is called the "hotkey window" and is most commonly used for occasional administrative tasks. It is described in Hotkeys.
+
+## Linux windows manager
+
+[i3wm](https://i3wm.org/)
+
+.image https://i.ytimg.com/vi/GKviflL9XeI/maxresdefault.jpg 540 960
