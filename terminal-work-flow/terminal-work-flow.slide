@@ -1,0 +1,153 @@
+# Terminal Work Flow
+
+Name
+9 Mar 2021
+jneo8lin@gmail.com
+
+## Tools
+
+## Terminal
+
+* mac
+    - iterm2
+* Linux
+    - gnome-terminal
+* shell
+    - zsh
+    - oh-my-zsh
+
+
+## Terminal - Iterms
+
+[hotkey-window](https://iterm2.com/features.html)
+
+> iTerm2 offers a special terminal window that is always available with a single keystroke. This window is called the "hotkey window" and is most commonly used for occasional administrative tasks. It is described in Hotkeys.
+
+
+## Keyboard Launcher
+
+## Mac - Alfred
+
+.image https://pic.macsc.com/pic/202107/macv-15112840_eeb9c58c59.jpeg 540 960
+
+## Linux - Albert
+
+.image https://cdn.pling.com/img/a/c/d/a/b902ffa35878f7f5835cbd68d2b4c5f9804ed2183bf9ff70c9b2a26b70bc333064ff.png 450 800
+
+
+## Linux windows manager
+
+## i3wm
+
+[i3wm](https://i3wm.org/)
+
+.image https://miro.medium.com/max/2000/1*zqS8DwYWB-GKulnJ3Yxsig.png 540 960
+
+## i3-gaps
+
+[i3-gaps](https://github.com/Airblader/i3)
+
+.image https://i.redd.it/kpjqt7s5kpv61.png 540 960
+
+## Linux - Polybar
+
+.link https://github.com/polybar/polybar
+.image https://i.redd.it/qqwya6bs8k011.png 500 1000
+
+
+## CLI tools
+
+## tmux
+
+.image https://3.bp.blogspot.com/-7PIgd9wA8oM/WjuUSXD2Z2I/AAAAAAABW5s/BFyMwKZLIVM8K0b88f3fvTVK5mz2zVRAgCLcBGAs/s1600/Tmux5.png 540 885
+
+## Makefile
+
+.code ./Makefile
+
+## Joplin
+
+[joplin](https://joplinapp.org/)
+
+.image https://joplinapp.org/images/ScreenshotTerminalCaptions.png 540 960
+
+## Joplin
+
+.image https://cdn.statically.io/img/techmoon.xyz/wp-content/uploads/2020/02/joplin-index-screen.png?quality=70&f=auto 540 960
+
+## CLI
+
+## combo
+
+* \>
+* \>\>
+* \|
+* \&
+* \$
+* xargs
+
+## Copy/Paste
+
+* Mac
+    * pbcopy/pbpaste
+* Linux
+    * xclip
+
+## Dir
+
+* touch
+* du
+    * ncdu
+
+* df
+
+* tree
+
+* find
+    * fzf
+
+## Monitor
+
+* htop
+    * nmon
+    * free
+* iostat
+* bmon
+* netstat
+* ps
+    * pstree
+
+## Display
+
+* tail
+    * ccze
+* more/less
+* grep
+
+## Processing
+
+* sed
+* awk
+* sort
+* uniq
+* wait
+* sleep
+* nohup
+
+## Other
+* w: show user session
+* watch
+* yes
+* tig
+* [fuck](https://github.com/nvbn/thefuck)
+* man
+* clear
+* env
+
+## Editor
+
+## VIM
+
+[.vimrc](https://raw.githubusercontent.com/jneo8/dotfiles/master/backup/.vimrc)
+
+[vim-plug](https://github.com/junegunn/vim-plug)
