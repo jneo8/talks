@@ -77,14 +77,23 @@ jneo8lin@gmail.com
 
 ## CLI
 
-## combo
+## Shell
 
-* \>
-* \>\>
-* \|
-* \&
-* \$
+* **`>`** Overwrite
+* **`>>`** Append
+* **`$`** Var
+* **`|`** Pipe
+* **`||`** OR
+* **`&`** Exec in background
+* **`&&`** AND
+* **`;`** Exec sequentially
+* **`|&`** and **`2>&1 |`** Pipe for both standard output and standard error
+
+## Combo
+
 * xargs
+
+.code ./xargs.sh
 
 ## Copy/Paste
 
@@ -93,7 +102,7 @@ jneo8lin@gmail.com
 * Linux
     * xclip
 
-## Dir
+## Dir / File
 
 * touch
 * du
@@ -104,16 +113,35 @@ jneo8lin@gmail.com
 * tree
 
 * find
-    * fzf
+    ```
+    find /home -name "*.sh"
+    ```
+    * [fzf](https://github.com/junegunn/fzf)
+        * CTRL + r
+        ```
+        vim $(fzf)
+        ```
 
 ## Monitor
 
-* htop
-    * nmon
+* top
     * free
+    * htop
+        ```
+        htop -C -d 3
+        ```
+    * nmon
+
 * iostat
-* bmon
+    ```
+    iostat -t 1 -x -c -m
+    ```
 * netstat
+    * Display all listening UDP && TCP
+        ```
+        netstat -alut
+        ```
+* bmon
 * ps
     * pstree
 
@@ -121,18 +149,66 @@ jneo8lin@gmail.com
 
 * tail
     * ccze
+        ```
+        tail -f /var/log/syslog | ccze
+        ```
 * more/less
 * grep
+    * grep exclude
+        ```
+        grep -v "123"
+        ```
 
 ## Processing
 
 * sed
-* awk
 * sort
 * uniq
 * wait
 * sleep
 * nohup
+    ```
+    nohup echo "123" &
+
+    tail -f nohup.out
+    ```
+
+## awk
+
+* abc.txt
+```
+a,1
+b,2
+c,3
+d,4
+e,5
+f,6
+a,11
+b,12
+```
+
+## awk
+
+* Split && Print
+    ```
+    awk -F, '{print $2,$1}' abc.csv
+    ```
+
+* Group by
+    ```
+    awk -F, '{arr[$1]+=$2}END{for (a in arr) print a, arr[a]}' abc.csv
+    ```
+
+* If even
+    ```
+    awk -F, '{if ($2 % 2 == 0) arr[$1]+=$2}END{for (a in arr) print a, arr[a]}' abc.csv
+    ```
+
+* Combo: grep && awk group by
+    ```
+    cat abc.csv | grep a | awk -F, '{arr[$1]+=$2}END{for (a in arr) print a, arr[a]}'
+    ```
+
 
 ## Other
 * w: show user session
@@ -140,7 +216,15 @@ jneo8lin@gmail.com
 * yes
 * tig
 * [fuck](https://github.com/nvbn/thefuck)
+    ```
+    gitt
+
+    fuck
+    ```
 * man
+    ```
+    man echo
+    ```
 * clear
 * env
 
@@ -150,4 +234,58 @@ jneo8lin@gmail.com
 
 [.vimrc](https://raw.githubusercontent.com/jneo8/dotfiles/master/backup/.vimrc)
 
+## Vim plugin manager
+
 [vim-plug](https://github.com/junegunn/vim-plug)
+
+<img src="https://raw.githubusercontent.com/junegunn/i/master/vim-plug/installer.gif" height="450">
+
+## Vim theme
+
+* paper color
+
+.image https://nlknguyen.files.wordpress.com/2015/05/c-dark-split.png 500 900
+
+## vim status - Airline
+
+* lean & mean status/tabline for vim that's light as air
+
+![img](https://github.com/vim-airline/vim-airline/wiki/screenshots/demo.gif)
+
+![tabline](https://f.cloud.github.com/assets/306502/1072623/44c292a0-1495-11e3-9ce6-dcada3f1c536.gif)
+
+![vim-airline-vimagit-demo](https://cloud.githubusercontent.com/assets/533068/22107273/2ea85ba0-de4d-11e6-9fa8-331103b88df4.gif)
+
+![image](https://f.cloud.github.com/assets/1532071/1559276/4c28fbac-4fc7-11e3-90ef-7e833d980f98.gif)
+
+## vim Asynchronous Linter Engine - ale
+
+* [ale](https://github.com/dense-analysis/ale)
+
+Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support
+
+.image https://user-images.githubusercontent.com/3518142/59195938-3a81b100-8b85-11e9-8e8d-6a601b1db908.gif
+
+
+## vim code completion - Completor
+
+.image https://camo.githubusercontent.com/a100a7209ebb894eabaac8d101a16864f28838a6f95c5cb76b0fe404745d4889/687474703a2f2f692e696d6775722e636f6d2f6635456f6941362e676966 500 900
+
+## vim search - fzf
+
+.image https://user-images.githubusercontent.com/133680/54912187-59897480-4ead-11e9-96d0-1464077f76fc.png 500 900
+
+## vim editor config
+
+.link https://editorconfig.org/
+.code .editorconfig
+
+## vim for python developer - black/mypy/flake8
+
+* [flake8](https://pypi.org/project/flake8/)
+* [flake8-docstrins](https://pypi.org/project/flake8-docstrings/)
+* [black](https://github.com/psf/black)
+    * The uncompromising Python code formatter
+
+* [mypy](https://github.com/python/mypy)
+    * Optional static typing for Python 3 and 2 (PEP 484)
