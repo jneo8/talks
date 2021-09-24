@@ -4,6 +4,12 @@ Name
 9 Mar 2021
 jneo8lin@gmail.com
 
+## Agenda
+
+* Tools
+* CLI tools
+* Editor
+
 ## Tools
 
 ## Terminal
@@ -54,17 +60,6 @@ jneo8lin@gmail.com
 .link https://github.com/polybar/polybar
 .image https://i.redd.it/qqwya6bs8k011.png 500 1000
 
-
-## CLI tools
-
-## tmux
-
-.image https://3.bp.blogspot.com/-7PIgd9wA8oM/WjuUSXD2Z2I/AAAAAAABW5s/BFyMwKZLIVM8K0b88f3fvTVK5mz2zVRAgCLcBGAs/s1600/Tmux5.png 540 885
-
-## Makefile
-
-.code ./Makefile
-
 ## Joplin
 
 [joplin](https://joplinapp.org/)
@@ -75,7 +70,16 @@ jneo8lin@gmail.com
 
 .image https://cdn.statically.io/img/techmoon.xyz/wp-content/uploads/2020/02/joplin-index-screen.png?quality=70&f=auto 540 960
 
-## CLI
+## Makefile
+
+.code ./Makefile
+
+
+## CLI tools
+
+## tmux
+
+.image https://3.bp.blogspot.com/-7PIgd9wA8oM/WjuUSXD2Z2I/AAAAAAABW5s/BFyMwKZLIVM8K0b88f3fvTVK5mz2zVRAgCLcBGAs/s1600/Tmux5.png 540 885
 
 ## Shell
 
@@ -101,6 +105,26 @@ jneo8lin@gmail.com
     * pbcopy/pbpaste
 * Linux
     * xclip
+
+## git
+
+
+* Alias
+
+    ```
+    alias gs="git status"
+    alias gl="git log --oneline --graph --all --decorate"
+    alias glv="git log  --graph --all --decorate --stat"
+    alias glvp="git log  --graph --all --decorate --stat -p"
+    alias glv1="git log --oneline --graph --all --decorate --stat"
+    alias gdc="git diff --cached"
+    ```
+
+## git - commitizen
+
+* [Commitizen](https://commitizen-tools.github.io/commitizen/)
+
+.image https://commitizen-tools.github.io/commitizen/images/demo.gif
 
 ## Dir / File
 
