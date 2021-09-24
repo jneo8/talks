@@ -313,3 +313,9 @@ Check syntax in Vim asynchronously and fix files, with Language Server Protocol 
 
 * [mypy](https://github.com/python/mypy)
     * Optional static typing for Python 3 and 2 (PEP 484)
+
+## Parrot
+
+```
+docker run -it --rm jmhobbs/terminal-parrot:latest
+```
